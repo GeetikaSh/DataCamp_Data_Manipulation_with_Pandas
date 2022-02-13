@@ -1,0 +1,14 @@
+# Import matplotlib.pyplot with alias plt
+import matplotlib.pyplot as plt
+
+# Print a DataFrame that shows whether each value in avocados_2016 is missing or not.
+print(avocados_2016.isna())
+
+# Print a summary that shows whether any value in each column is missing or not.
+print(avocados_2016.isna().any())
+
+# Bar plot of missing values by variable
+avocados_2016.isna().sum().plot(kind='bar')
+
+# Show plot
+plt.show()
